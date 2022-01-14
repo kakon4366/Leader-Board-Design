@@ -184,6 +184,7 @@ header{
 .footer{
     background: #000000;
     padding: 12px 0;
+    gap: 60px;
 }
 .footer p{
     color: #fff;
@@ -191,4 +192,82 @@ header{
 }
 .footer p span{
     color: #562EFF;
+}
+/* toggle button */
+.toggle-button{
+    display: none;
+}
+
+/* =======================
+        Media Query
+ ======================== */
+
+ /* Tablet Devices */
+ @media only screen and (max-width: 768px){
+     .header-container{
+         position: relative;
+         width: 100%;
+     }
+    .toggle-button{
+        display: block;
+        color: #fff;
+        font-size: 24px;
+        padding: 12px;
+        cursor: pointer;
+        z-index: 99;
+    }
+    .nav-bar{
+        visibility: hidden;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        justify-content: center;
+        grid-row-gap: 1em;
+        position: absolute;
+        top: 100%;
+        background: #562EFF;
+        transition: visibility 0.3s ease;
+    }
+    .toggle-button:hover + .nav-bar{
+        visibility: visible;
+    }
+    .nav-bar ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1em;
+    }
+    .nav-bar ul li{
+        margin-left: 0;
+    }
+    /*ohter sections*/
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    .players{
+        grid-template-columns: 1fr 1fr;
+        margin-left: 30px
+    }
+    .blogs{
+        grid-template-columns: 1fr 1fr;
+        margin: 56px 0;
+        grid-row-gap: 64px;
+    }
+    .blog{
+        flex-direction: column;
+        align-items: center;
+    }
+     .latest-course{
+         display: none;
+     }
+ }
+
+ /* Moblile Devices */
+@media only screen and (max-width: 425px){
+    .players{
+        grid-template-columns: 1fr;
+    }
+    .blogs{
+        grid-template-columns: 1fr;
+    }
 }
