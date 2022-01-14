@@ -204,9 +204,15 @@ header{
 
  /* Tablet Devices */
  @media only screen and (max-width: 768px){
+     .document-title{
+         margin-left: 12px;
+     }
      .header-container{
          position: relative;
          width: 100%;
+     }
+     .logo{
+         margin-left: 12px;
      }
     .toggle-button{
         display: block;
