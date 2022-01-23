@@ -13,7 +13,7 @@ body{
 .container{
     background-color: #ffffff;
     border-radius: 5px;
-    width: 870px;
+    max-width: 870px;
     padding: 30px;
 }
 hr{
@@ -260,17 +260,22 @@ header{
         flex-direction: column;
         align-items: center;
     }
-     .latest-course{
-         display: none;
-     }
+     .courses{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 36px;
+    }
  }
 
  /* Moblile Devices */
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 550px){
     .players{
         grid-template-columns: 1fr;
     }
     .blogs{
         grid-template-columns: 1fr;
+    }
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 36px;
     }
 }
