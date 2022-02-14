@@ -184,9 +184,10 @@ header{
     background: #FFE4E8;
 }
 
-
+/* Unorder and input css */
 .list-items-area{
     width: 100%;
+    display: flex;
 }
 .btn{
     background-color: #562EFF;
@@ -198,6 +199,17 @@ header{
     cursor: pointer;
     font-weight: 700;
 }
+.left-side, .right-side{
+    width: 50%;
+}
+.increment-value input{
+    width: 75%;
+    display: block;
+    margin-bottom: 16px;
+    font-size: 18px;
+    padding: 10px;
+}
+
 /* Footer Styles */
 .footer{
     background: #000000;
@@ -281,6 +293,13 @@ header{
      .courses{
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 36px;
+    }
+    .list-items-area{
+        display: block;
+    }
+    .left-side, .right-side{
+        margin-top: 16px;
+        width: 100%;
     }
  }
 

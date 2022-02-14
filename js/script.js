@@ -19,3 +19,15 @@ document.getElementById('item-add-btn').addEventListener('click', function(){
     li.appendChild(liText);
     ul.appendChild(li);
 })
+
+//task-4 and 5: Increment input value and disabled increment btn
+document.getElementById('increment').addEventListener('click', function(){
+    const input = document.getElementById('input-value');
+    let inputValue = parseInt(input.value);
+    input.value = inputValue + 1;
+    if(input.value == 5){
+        const btn = document.getElementById('increment');
+        btn.setAttribute('disabled', '');
+        btn.style.backgroundColor = '#542eff8f';
+    }
+})
