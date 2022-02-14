@@ -183,6 +183,21 @@ header{
     border-radius: 25px;
     background: #FFE4E8;
 }
+
+
+.list-items-area{
+    width: 100%;
+}
+.btn{
+    background-color: #562EFF;
+    padding: 12px 24px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 700;
+}
 /* Footer Styles */
 .footer{
     background: #000000;

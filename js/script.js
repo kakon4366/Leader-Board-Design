@@ -11,4 +11,11 @@ for(const player of playerBg){
     player.style.backgroundColor = 'rgba(163, 5, 165, 0.2)';
 }
 
-
+// task-3: ul list added and button click to list items add
+document.getElementById('item-add-btn').addEventListener('click', function(){
+    const li = document.createElement('li');
+    const liText = document.createTextNode('item');
+    const ul = document.getElementById('items');
+    li.appendChild(liText);
+    ul.appendChild(li);
+})
